@@ -1,0 +1,4 @@
+# Nmap 7.99 scan initiated Wed Oct 21 15:36:09 2026 as: /usr/lib/nmap/nmap --privileged -sT -sV -p 21,80,139,445 -oA evidencias/reconhecimento/servicos-iniciais 192.168.56.101
+Host: 192.168.56.101 ()	Status: Up
+Host: 192.168.56.101 ()	Ports: 21/open/tcp//ftp//vsftpd 2.3.4/, 80/open/tcp//http//Apache httpd 2.2.8 ((Ubuntu) DAV|2)/, 139/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/, 445/open/tcp//netbios-ssn//Samba smbd 3.X - 4.X (workgroup: WORKGROUP)/
+# Nmap done at Wed Oct 21 15:36:21 2026 -- 1 IP address (1 host up) scanned in 11.46 seconds

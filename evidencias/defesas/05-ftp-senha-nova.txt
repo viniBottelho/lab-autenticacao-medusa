@@ -1,0 +1,9 @@
+Medusa v2.3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net>
+
+GENERAL: Parallel Hosts: 1 Parallel Logins: 1
+GENERAL: Total Hosts: 1 
+GENERAL: Total Users: 1
+GENERAL: Total Passwords: 1
+2026-10-22 13:29:33 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: msfadmin (1 of 1, 0 complete) Password: [OCULTA]
+2026-10-22 13:29:33 ACCOUNT FOUND: [ftp] Host: 192.168.56.101 User: msfadmin Password: [OCULTA]
+GENERAL: Medusa has finished.

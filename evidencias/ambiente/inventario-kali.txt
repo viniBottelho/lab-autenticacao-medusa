@@ -1,0 +1,52 @@
+2026-10-21T15:34:14-04:00
+PRETTY_NAME="Kali GNU/Linux Rolling"
+NAME="Kali GNU/Linux"
+VERSION_ID="2026.2"
+VERSION="2026.2"
+VERSION_CODENAME=kali-rolling
+ID=kali
+ID_LIKE=debian
+HOME_URL="https://www.kali.org/"
+SUPPORT_URL="https://forums.kali.org/"
+BUG_REPORT_URL="https://bugs.kali.org/"
+ANSI_COLOR="1;31"
+lo               UNKNOWN        127.0.0.1/8 ::1/128 
+eth0             UP             192.168.56.102/24 fe80::48b5:4c80:aa3e:cc18/64 
+192.168.56.0/24 dev eth0 proto kernel scope link src 192.168.56.102 metric 100 
+Nmap version 7.99 ( https://nmap.org )
+Platform: x86_64-pc-linux-gnu
+Compiled with: liblua-5.4.8 openssl-3.6.2 libssh2-1.11.1 libz-1.3.1 libpcre2-10.46 libpcap-1.10.6 nmap-libdnet-1.18.0 ipv6
+Compiled without:
+Available nsock engines: epoll poll select
+Medusa v2.3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net>
+
+  Available modules in "." :
+
+  Available modules in "/usr/lib/x86_64-linux-gnu/medusa/modules" :
+    + cvs.mod : Brute force module for CVS sessions : version 2.0
+    + ftp.mod : Brute force module for FTP/FTPS sessions : version 2.1
+    + http.mod : Brute force module for HTTP : version 2.1
+    + imap.mod : Brute force module for IMAP sessions : version 2.0
+    + mssql.mod : Brute force module for M$-SQL sessions : version 2.0
+    + mysql.mod : Brute force module for MySQL sessions : version 2.0
+    + nntp.mod : Brute force module for NNTP sessions : version 2.0
+    + pcanywhere.mod : Brute force module for PcAnywhere sessions : version 2.0
+    + pop3.mod : Brute force module for POP3 sessions : version 2.0
+    + postgres.mod : Brute force module for PostgreSQL sessions : version 2.0
+    + rdp.mod : Brute force module for RDP (Microsoft Terminal Server) sessions : version 0.3
+    + rexec.mod : Brute force module for REXEC sessions : version 2.0
+    + rlogin.mod : Brute force module for RLOGIN sessions : version 2.0
+    + rsh.mod : Brute force module for RSH sessions : version 2.0
+    + smbnt.mod : Brute force module for SMB (SMBv1-3, Signing, LM/NTLM/LMv2/NTLMv2) sessions : version 3.0
+    + smtp-vrfy.mod : Brute force module for verifying SMTP accounts (VRFY/EXPN/RCPT TO) : version 2.1
+    + smtp.mod : Brute force module for SMTP Authentication with TLS : version 2.0
+    + snmp.mod : Brute force module for SNMP Community Strings : version 2.1
+    + ssh.mod : Brute force module for SSH v2 sessions : version 2.1
+    + svn.mod : Brute force module for Subversion sessions : version 2.1
+    + telnet.mod : Brute force module for telnet sessions : version 2.0
+    + vmauthd.mod : Brute force module for the VMware Authentication Daemon : version 2.0
+    + vnc.mod : Brute force module for VNC sessions : version 2.2
+    + web-form.mod : Brute force module for web forms : version 2.1
+    + wrapper.mod : Generic Wrapper Module : version 2.0
+
+

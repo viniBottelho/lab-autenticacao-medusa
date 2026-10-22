@@ -1,0 +1,16 @@
+# Arquivos privados e pacotes de revisão
+.env
+.env.*
+privado/
+private/
+*.zip
+*.tar.gz
+
+# Captura original excluída por conter cookie de sessão
+images/dvwa-low-04-medusa.png
+
+# Arquivos locais gerados pelo sistema e Python
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

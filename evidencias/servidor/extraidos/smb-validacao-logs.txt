@@ -1,0 +1,203 @@
+==> log.192.168.56.102 <==
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:push_sec_ctx(256)
+  push_sec_ctx(0, 0) : sec_ctx_stack_ndx = 2
+[2026/10/21 22:27:54, 3] smbd/uid.c:push_conn_ctx(388)
+  push_conn_ctx(0) : conn_ctx_stack_ndx = 1
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:set_sec_ctx(288)
+  setting sec ctx (0, 0) - sec_ctx_stack_ndx = 2
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:pop_sec_ctx(386)
+  pop_sec_ctx (0, 0) - sec_ctx_stack_ndx = 1
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:push_sec_ctx(256)
+  push_sec_ctx(0, 0) : sec_ctx_stack_ndx = 2
+[2026/10/21 22:27:54, 3] smbd/uid.c:push_conn_ctx(388)
+  push_conn_ctx(0) : conn_ctx_stack_ndx = 1
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:set_sec_ctx(288)
+  setting sec ctx (0, 0) - sec_ctx_stack_ndx = 2
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:pop_sec_ctx(386)
+  pop_sec_ctx (0, 0) - sec_ctx_stack_ndx = 1
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:push_sec_ctx(256)
+  push_sec_ctx(0, 0) : sec_ctx_stack_ndx = 2
+[2026/10/21 22:27:54, 3] smbd/uid.c:push_conn_ctx(388)
+  push_conn_ctx(0) : conn_ctx_stack_ndx = 1
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:set_sec_ctx(288)
+  setting sec ctx (0, 0) - sec_ctx_stack_ndx = 2
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:pop_sec_ctx(386)
+  pop_sec_ctx (0, 0) - sec_ctx_stack_ndx = 1
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:pop_sec_ctx(386)
+  pop_sec_ctx (0, 0) - sec_ctx_stack_ndx = 0
+[2026/10/21 22:27:54, 3] auth/auth.c:check_ntlm_password(268)
+  check_ntlm_password: sam authentication for user [msfadmin] succeeded
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:push_sec_ctx(256)
+  push_sec_ctx(0, 0) : sec_ctx_stack_ndx = 1
+[2026/10/21 22:27:54, 3] smbd/uid.c:push_conn_ctx(388)
+  push_conn_ctx(0) : conn_ctx_stack_ndx = 0
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:set_sec_ctx(288)
+  setting sec ctx (0, 0) - sec_ctx_stack_ndx = 1
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:pop_sec_ctx(386)
+  pop_sec_ctx (0, 0) - sec_ctx_stack_ndx = 0
+[2026/10/21 22:27:54, 2] auth/auth.c:check_ntlm_password(307)
+  check_ntlm_password:  authentication for user [msfadmin] -> [msfadmin] -> [msfadmin] succeeded
+[2026/10/21 22:27:54, 3] smbd/password.c:register_vuid(257)
+  User name: msfadmin	Real name: msfadmin,,,
+[2026/10/21 22:27:54, 3] smbd/password.c:register_vuid(276)
+  UNIX uid 1000 is UNIX user msfadmin, and will be vuid 100
+[2026/10/21 22:27:54, 3] smbd/password.c:register_vuid(305)
+  Adding homes service for user 'msfadmin' using home directory: '/home/msfadmin'
+[2026/10/21 22:27:54, 3] param/loadparm.c:lp_add_home(2442)
+  adding home's share [msfadmin] for user 'msfadmin' at '/home/msfadmin'
+[2026/10/21 22:27:54, 3] smbd/process.c:chain_reply(1254)
+  Chained message
+[2026/10/21 22:27:54, 3] smbd/process.c:switch_message(900)
+  switch message SMBtconX (pid 6213) conn 0x0
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:set_sec_ctx(288)
+  setting sec ctx (0, 0) - sec_ctx_stack_ndx = 0
+[2026/10/21 22:27:54, 3] smbd/service.c:make_connection_snum(477)
+  Connect path is '/tmp' for service [ADMIN$]
+[2026/10/21 22:27:54, 3] lib/util_seaccess.c:se_access_check(250)
+[2026/10/21 22:27:54, 3] lib/util_seaccess.c:se_access_check(251)
+  se_access_check: user sid is S-1-5-21-1042354039-2475377354-766472396-3000
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-3001
+  se_access_check: also S-1-1-0
+  se_access_check: also S-1-5-2
+  se_access_check: also S-1-5-11
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1009
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1041
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1049
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1051
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1059
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1061
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1089
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1093
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1215
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1223
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1225
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1239
+[2026/10/21 22:27:54, 3] smbd/vfs.c:vfs_init_default(215)
+  Initialising default vfs hooks
+[2026/10/21 22:27:54, 3] lib/util_seaccess.c:se_access_check(250)
+[2026/10/21 22:27:54, 3] lib/util_seaccess.c:se_access_check(251)
+  se_access_check: user sid is S-1-5-21-1042354039-2475377354-766472396-3000
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-3001
+  se_access_check: also S-1-1-0
+  se_access_check: also S-1-5-2
+  se_access_check: also S-1-5-11
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1009
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1041
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1049
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1051
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1059
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1061
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1089
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1093
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1215
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1223
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1225
+  se_access_check: also S-1-5-21-1042354039-2475377354-766472396-1239
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:set_sec_ctx(288)
+  setting sec ctx (1000, 1000) - sec_ctx_stack_ndx = 0
+[2026/10/21 22:27:54, 3] smbd/service.c:make_connection_snum(662)
+  192.168.56.102 (192.168.56.102) connect to service ADMIN$ initially as user msfadmin (uid=1000, gid=1000) (pid 6213)
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:set_sec_ctx(288)
+  setting sec ctx (0, 0) - sec_ctx_stack_ndx = 0
+[2026/10/21 22:27:54, 3] smbd/reply.c:reply_tcon_and_X(666)
+  tconX service=ADMIN$ 
+[2026/10/21 22:27:54, 3] smbd/process.c:timeout_processing(1366)
+  timeout_processing: End of file from client (client has disconnected).
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:set_sec_ctx(288)
+  setting sec ctx (0, 0) - sec_ctx_stack_ndx = 0
+[2026/10/21 22:27:54, 2] smbd/server.c:exit_server(608)
+  Closing connections
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:set_sec_ctx(288)
+  setting sec ctx (0, 0) - sec_ctx_stack_ndx = 0
+[2026/10/21 22:27:54, 3] smbd/service.c:close_cnum(835)
+  192.168.56.102 (192.168.56.102) closed connection to service ADMIN$
+[2026/10/21 22:27:54, 3] smbd/connection.c:yield_connection(69)
+  Yielding connection to ADMIN$
+[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:set_sec_ctx(288)
+  setting sec ctx (0, 0) - sec_ctx_stack_ndx = 0
+[2026/10/21 22:27:54, 3] smbd/connection.c:yield_connection(69)
+  Yielding connection to 
+[2026/10/21 22:27:54, 3] smbd/server.c:exit_server(652)
+  Server exit (normal exit)
+
+==> log.kali <==
+[2026/09/15 17:40:30, 1] smbd/service.c:make_connection_snum(662)
+  kali (192.168.56.102) connect to service tmp initially as user nobody (uid=65534, gid=65534) (pid 4779)
+[2026/09/15 17:40:30, 1] smbd/service.c:close_cnum(835)
+  kali (192.168.56.102) closed connection to service tmp
+
+==> log.smbd <==
+[2026/08/24 09:23:03, 0] smbd/server.c:main(802)
+  smbd version 3.0.20-Debian started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2004
+[2026/08/24 18:23:42, 0] smbd/server.c:main(802)
+  smbd version 3.0.20-Debian started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2004
+[2026/08/24 18:43:09, 0] smbd/server.c:main(802)
+  smbd version 3.0.20-Debian started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2004
+[2026/08/31 07:57:46, 0] smbd/server.c:main(802)
+  smbd version 3.0.20-Debian started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2004
+[2026/08/31 10:41:05, 0] smbd/server.c:main(802)
+  smbd version 3.0.20-Debian started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2004
+[2026/08/31 18:22:42, 0] smbd/server.c:main(802)
+  smbd version 3.0.20-Debian started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2004
+[2026/09/14 18:46:33, 0] smbd/server.c:main(802)
+  smbd version 3.0.20-Debian started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2004
+[2026/09/15 08:47:20, 0] smbd/server.c:main(802)
+  smbd version 3.0.20-Debian started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2004
+[2026/09/15 10:24:32, 0] smbd/server.c:main(802)
+  smbd version 3.0.20-Debian started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2004
+[2026/09/15 17:38:06, 0] smbd/server.c:main(802)
+  smbd version 3.0.20-Debian started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2004
+[2026/09/19 09:38:53, 0] smbd/server.c:main(802)
+  smbd version 3.0.20-Debian started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2004
+[2026/10/19 18:27:04, 0] smbd/server.c:main(802)
+  smbd version 3.0.20-Debian started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2004
+[2026/10/19 18:31:54, 0] smbd/server.c:main(802)
+  smbd version 3.0.20-Debian started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2004
+[2026/10/19 18:40:22, 0] smbd/server.c:main(802)
+  smbd version 3.0.20-Debian started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2004
+[2026/10/21 13:15:33, 0] smbd/server.c:main(802)
+  smbd version 3.0.20-Debian started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2004
+[2026/10/21 14:51:30, 0] smbd/server.c:main(802)
+  smbd version 3.0.20-Debian started.
+  Copyright Andrew Tridgell and the Samba Team 1992-2004
+[2026/10/21 15:36:12, 0] lib/util_sock.c:get_peer_addr(1222)
+  getpeername failed. Error was Transport endpoint is not connected
+[2026/10/21 15:36:12, 0] lib/util_sock.c:get_peer_addr(1222)
+  getpeername failed. Error was Transport endpoint is not connected
+[2026/10/21 15:36:12, 0] lib/util_sock.c:get_peer_addr(1222)
+  getpeername failed. Error was Transport endpoint is not connected
+[2026/10/21 15:36:12, 0] lib/util_sock.c:get_peer_addr(1222)
+  getpeername failed. Error was Transport endpoint is not connected
+[2026/10/21 22:19:06, 1] lib/debug.c:debuglevel_message(488)
+  INFO: Received REQ_DEBUGLEVEL message from PID 6186
+[2026/10/21 22:19:06, 1] lib/debug.c:debuglevel_message(488)
+  INFO: Received REQ_DEBUGLEVEL message from PID 6186
+[2026/10/21 22:23:31, 1] lib/debug.c:debuglevel_message(488)
+  INFO: Received REQ_DEBUGLEVEL message from PID 6198
+[2026/10/21 22:23:31, 1] lib/debug.c:debuglevel_message(488)
+  INFO: Received REQ_DEBUGLEVEL message from PID 6198
+[2026/10/21 22:26:56, 3] smbd/process.c:check_reload(1347)
+  Printcap cache time expired.
+[2026/10/21 22:26:56, 3] printing/pcap.c:pcap_cache_reload(114)
+  reloading printcap cache
+[2026/10/21 22:26:56, 3] printing/pcap.c:pcap_cache_reload(213)
+  reload status: ok
+[2026/10/21 22:26:56, 3] printing/pcap.c:pcap_cache_reload(114)
+  reloading printcap cache
+[2026/10/21 22:26:56, 3] printing/pcap.c:pcap_cache_reload(213)
+  reload status: ok

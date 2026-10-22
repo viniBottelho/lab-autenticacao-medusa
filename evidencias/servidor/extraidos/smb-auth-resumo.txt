@@ -1,0 +1,14 @@
+/var/log/samba/log.192.168.56.102-[2026/10/21 22:26:56, 2] auth/auth.c:check_ntlm_password(317)
+/var/log/samba/log.192.168.56.102:  check_ntlm_password:  Authentication for user [msfadmin] -> [msfadmin] FAILED with error NT_STATUS_WRONG_PASSWORD
+/var/log/samba/log.192.168.56.102-[2026/10/21 22:26:56, 3] smbd/error.c:error_packet(147)
+/var/log/samba/log.192.168.56.102-  error packet at smbd/sesssetup.c(995) cmd=115 (SMBsesssetupX) NT_STATUS_LOGON_FAILURE
+--
+/var/log/samba/log.192.168.56.102-[2026/10/21 22:27:54, 3] auth/auth.c:check_ntlm_password(268)
+/var/log/samba/log.192.168.56.102:  check_ntlm_password: sam authentication for user [msfadmin] succeeded
+/var/log/samba/log.192.168.56.102-[2026/10/21 22:27:54, 3] smbd/sec_ctx.c:push_sec_ctx(256)
+/var/log/samba/log.192.168.56.102-  push_sec_ctx(0, 0) : sec_ctx_stack_ndx = 1
+--
+/var/log/samba/log.192.168.56.102-[2026/10/21 22:27:54, 2] auth/auth.c:check_ntlm_password(307)
+/var/log/samba/log.192.168.56.102:  check_ntlm_password:  authentication for user [msfadmin] -> [msfadmin] -> [msfadmin] succeeded
+/var/log/samba/log.192.168.56.102-[2026/10/21 22:27:54, 3] smbd/password.c:register_vuid(257)
+/var/log/samba/log.192.168.56.102-  User name: msfadmin	Real name: msfadmin,,,

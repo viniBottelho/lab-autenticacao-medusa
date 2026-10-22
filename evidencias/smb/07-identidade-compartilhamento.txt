@@ -1,0 +1,2 @@
+smb1_signing_good: BAD SIG: seq 1
+Cannot connect to server.  Error was NT_STATUS_ACCESS_DENIED

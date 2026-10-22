@@ -1,0 +1,5 @@
+123456
+admin123
+kali
+msfadmin
+password

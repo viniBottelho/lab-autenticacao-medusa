@@ -1,0 +1,14 @@
+Medusa v2.3 [http://www.foofus.net] (C) JoMo-Kun / Foofus Networks <jmk@foofus.net>
+
+GENERAL: Module parameter: GROUP:LOCAL
+GENERAL: Module parameter: PASS:PASSWORD
+GENERAL: Parallel Hosts: 1 Parallel Logins: 1
+GENERAL: Total Hosts: 1 
+GENERAL: Total Users: 1
+GENERAL: Total Passwords: 1
+GENERAL: smbnt.mod: Server requested ENCRYPTED password without security signatures.
+GENERAL: smbnt.mod: Server machine name: 
+GENERAL: smbnt.mod: Server primary domain: WORKGROUP
+2026-10-22 10:15:08 ACCOUNT CHECK: [smbnt] Host: 192.168.56.101 (1 of 1, 0 complete) User: msfadmin (1 of 1, 0 complete) Password: msfadmin (1 of 1 complete)
+2026-10-22 10:15:08 ACCOUNT FOUND: [smbnt] Host: 192.168.56.101 User: msfadmin Password: msfadmin [SUCCESS (ADMIN$ - Access Allowed)]
+GENERAL: Medusa has finished.

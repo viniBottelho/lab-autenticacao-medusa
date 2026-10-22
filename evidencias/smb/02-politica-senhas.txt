@@ -1,0 +1,2 @@
+min_password_length: 0
+password_properties: 0x00000000
