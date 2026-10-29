@@ -18,9 +18,11 @@ O **SMB** exigiu mais investigação. Consegui enumerar 35 usuários sem autenti
 
 Usei duas VMs próprias no VirtualBox, configuradas em rede host-only: Kali em `192.168.56.102` e Metasploitable em `192.168.56.101`. As ferramentas principais foram Nmap 7.99 e Medusa 2.3. Os testes ficaram restritos a FTP, HTTP/DVWA e SMB nesse ambiente deliberadamente vulnerável.
 
+Veja a [topologia do laboratório](docs/01-ambiente.md#topologia-do-laboratório), com as VMs, a rede host-only, os serviços testados e os logs utilizados na validação.
+
 ## Documentação
 
-1. [Ambiente e reconhecimento](docs/01-ambiente.md)
+1. [Ambiente, topologia e reconhecimento](docs/01-ambiente.md)
 2. [Metodologia e limites dos testes](docs/02-metodologia.md)
 3. [FTP: autenticação e teste com lista](docs/03-ftp.md)
 4. [DVWA: comparação dos três níveis](docs/04-dvwa.md)
