@@ -58,3 +58,44 @@ Para comparar o DVWA, confira a versão e o código instalado. O comportamento d
 Após retomar as VMs, percebi que os horários não coincidiam. As capturas mostram Kali em **22/10/2026, 10:27:16 EDT** e Metasploitable em **21/10/2026, 22:39:46 EDT**. As leituras foram feitas em momentos diferentes, mas mostram uma divergência de aproximadamente 11 h 47 min. Os registros das VMs usam EDT/`-0400`, diferente do meu fuso no Brasil.
 
 Mantive os horários originais e comparei origem, conta, sequência e intervalos entre eventos. Não usei a subtração de timestamps de máquinas diferentes para medir a duração dos testes. Os [prints do Kali](../images/smb-15-relogio-kali.png) e do [Metasploitable](../images/smb-16-relogio-metasploitable.png) registram essa conferência. Em uma próxima execução, a sincronização dos relógios deve ocorrer antes da coleta.
+
+## Topologia do laboratório
+
+O laboratório utiliza duas máquinas virtuais conectadas à rede host-only do VirtualBox. O Kali Linux origina os testes contra os serviços do Metasploitable 2.
+
+```mermaid
+flowchart TB
+    subgraph HOST["Computador hospedeiro — Windows / VirtualBox"]
+        direction TB
+
+        KALI["VM Kali Linux
+        192.168.56.102
+        Nmap e Medusa"]
+
+        REDE["Rede host-only
+        192.168.56.0/24"]
+
+        subgraph META["VM Metasploitable 2 — 192.168.56.101"]
+            FTP["FTP
+            vsftpd"]
+            WEB["HTTP
+            Apache / DVWA
+            Low, Medium e High"]
+            SMB["SMB
+            Samba"]
+            LOGS["Logs do servidor
+            FTP, Apache e Samba"]
+        end
+
+        KALI -->|"Reconhecimento e testes de autenticação"| REDE
+        REDE -->|"TCP 21"| FTP
+        REDE -->|"TCP 80"| WEB
+        REDE -->|"TCP 139 e 445"| SMB
+
+        FTP -.->|"Registro de eventos"| LOGS
+        WEB -.->|"Registro de requisições"| LOGS
+        SMB -.->|"Registro de autenticação"| LOGS
+    end
+```
+
+As setas contínuas representam o tráfego dos testes; as pontilhadas indicam a geração de registros no servidor. Os resultados das ferramentas são comparados com as respostas dos serviços e os logs para distinguir tentativas de autenticação, credenciais aceitas e permissões de acesso.
