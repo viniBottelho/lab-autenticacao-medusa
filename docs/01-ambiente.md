@@ -59,7 +59,7 @@ Após retomar as VMs, percebi que os horários não coincidiam. As capturas most
 
 Mantive os horários originais e comparei origem, conta, sequência e intervalos entre eventos. Não usei a subtração de timestamps de máquinas diferentes para medir a duração dos testes. Os [prints do Kali](../images/smb-15-relogio-kali.png) e do [Metasploitable](../images/smb-16-relogio-metasploitable.png) registram essa conferência. Em uma próxima execução, a sincronização dos relógios deve ocorrer antes da coleta.
 
-## Topologia do laboratório
+## Arquitetura do laboratório
 
 O laboratório utiliza duas máquinas virtuais conectadas à rede host-only do VirtualBox. O Kali Linux origina os testes contra os serviços do Metasploitable 2.
 
