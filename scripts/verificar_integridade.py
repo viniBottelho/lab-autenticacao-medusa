@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verifica SHA256SUMS localmente. Não executa operações de rede."""
+
 
 import hashlib
 from pathlib import Path, PurePosixPath
